@@ -1,24 +1,5 @@
-# README
+# Arraiar (Virtual São João Party Event)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto que eu estou desenvolvendo para ser usado como um ambiente virtual imesivo para festas de São João em empresas e escolas.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Project Screenshot](./screenshot.png)
