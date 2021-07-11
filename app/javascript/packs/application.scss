@@ -1,0 +1,92 @@
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #444444;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* animations */
+@keyframes hover {
+  50% {
+    transform: translatey(-1%);
+  }
+}
+
+@keyframes pulse-1 {
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes pulse-2 {
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.flash {
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+#app {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* player */
+#player {
+  position: fixed;
+  bottom: 0;
+  left: 6px;
+}
+
+/* flags */
+#small-flags, #big-flags {
+  transform-origin: 50% 50%;
+  animation: pulse-1 3s 750ms ease-in-out infinite;
+}
+
+#lamp-01, #lamp-02, #lamp-03 {
+  transform-origin: 50% 50%;
+  animation: pulse-1 3s 750ms ease-in-out infinite;
+}
+
+/* moon */
+#moon-light {
+  animation: flash 3s 500ms ease infinite;
+}
+
+/* buttons */
+#button-firepit:hover,
+#button-sound:hover,
+#button-tent-green:hover,
+#button-tent-blue:hover,
+#button-tent-purple:hover,
+#button-tent-red:hover {
+  cursor: pointer;
+
+  rect {
+    fill: #cccccc;
+    stroke: #AA6565;
+  }
+}
